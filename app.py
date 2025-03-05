@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
 import joblib
 
 # file1=open("catboost_model.joblib","rb")
@@ -9,6 +8,7 @@ import joblib
 # file1.close()
 data=pd.read_csv("finalProjectData.csv")
 model=joblib.load("catboost_model.joblib")
+print("Hello !The model has loaded succesfully")
 
 #Create a title for the website
 st.title("Car Price Prediction Website:")
