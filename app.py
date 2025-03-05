@@ -4,11 +4,8 @@ import numpy as np
 import pickle
 import joblib
 
-
-
-model=joblib.load("catboost_model.joblib")
-
 data=pd.read_csv("finalProjectData.csv")
+model=joblib.load("catboost_model.joblib")
 
 #Create a title for the website
 st.title("Car Price Prediction Website:")
